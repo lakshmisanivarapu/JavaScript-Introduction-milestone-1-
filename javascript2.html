@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="text-align:center ; background-color: blue;">
+    <h1 style="color: green;">Get The Url</h1>
+    <h2>Click on the link to get this page url</h2>
+    <button type="button" onclick="getUrl();" color="blue">get Page URL</button>
+    <p id="demo"></p>
+    <script>
+        document.getElementById('demo').style.fontSize='50px';
+        document.getElementById('demo').style.color='purple';
+    let text="The url of this page is"+"<br><br>"+window.location.href;
+        function getUrl(){
+            document.getElementById("demo").innerHTML=text;
+        }
+    </script>
+    
+</body>
+</html>
